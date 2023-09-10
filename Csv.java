@@ -23,7 +23,7 @@ public class Csv
 
 	static 
 	{
-		uploadStudent(studentFile);
+	uploadStudent(studentFile);
         uploadAddress(addressFile);
         uploadClass1(class1File);	
 	}
