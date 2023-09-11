@@ -135,8 +135,8 @@ return failedStudentsByAge;
 
 //Q.8
 public static void deleteStudent(List<Student> studentList, List<Address> addressList, String studentName) {
-    studentList.removeIf(student -> student.getName().equals(studentName)); // public boolean removeIf(Predicate filter)
-    addressList.removeIf(address -> address.equals(studentName));
+    studentList.removeIf(student -> student.getId() == studentId ); // public boolean removeIf(Predicate filter)
+    addressList.removeIf(address -> address.getStudent_id() == studentId);
 }
 
 //Q.9
